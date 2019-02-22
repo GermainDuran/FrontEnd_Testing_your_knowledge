@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Flatiron Trivia Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+</head>
+
+<body class="container">
+  <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/FS_wiki.png" alt="Flatiron Logo" height="200"> -->
+  <img src="http://www.gifmania.com/Gif-Animados-Espacio/Imagenes-Astronomia/Planeta-Tierra/Tierra-Girando-84966.gif"  height="200">
+  <div id="hello-page" class="row">
+    <h1 id="welcome-title">Testing your Knowledge of The World </h1><br>
+    <!-- <h3>Do you have the know-how for a perfect score?</h3><br> -->
+    <button type="button" class="btn btn-info grow" id="start-button" style="background:red"> START GAME</button>
+
+  </div> <!-- end of hello-page -->
+
+    <div id="trivia-page" class="row"> <!-- start of trivia-page -->
+        <h3 id="trivia-score">Score:</h3>
+        <br>
+        <div>
+            <h3 id="trivia-question-title">Question:</h3>
+            <hr>
+
+            <button type="button" class="btn btn-danger grow" id="exit-button" style="background:red">Exit Game</button>
+            <button type="button" class="btn btn-primary grow" id="next-button" style="background:red">Next Question</button>
+        </div>
+    </div> <!-- end of trivia-page -->
+
+    <div>
+      <!-- Right Answer -->
+      <div id = "right_alert" class = "hidden">
+        <strong>CORRECT! </strong>
+      </div>
+      <!-- Wrong Answer -->
+      <div id = "wrong_alert" class = "hidden">
+        <strong>INCORRECT! </strong>
+      </div>
+    </div> <!-- Trivia Answer Alert -->
+
+    <div id="game-over-page" class="row"> <!-- start of game-over-page -->
+
+      <h1 id="congrats-title" style="background:red">Congratulations! The game has Ended!</h1><br>
+
+      <h2 id='current-user-final-score'>You scored: __ out of 10</h2><br>
+      <form action="" id="game-over-enter-name">
+        <input type="text" placeholder="Your name">
+        <input id="form-submit-button" type="submit" value="Submit">
+      </form>
+      <br>
+      <div id="game-over-leaderboard">
+        <table id="game-score-table">
+          <tr>
+            <th>Player</th>
+            <th>Score</th>
+          </tr>
+        </table>
+      </div><br>
+      <button type="button" class="btn btn-success grow" id="again-button" style="background:red">Play Again</button>
+    </div> <!-- end of game-over-page -->
+
+
+
+    <script src="index.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
